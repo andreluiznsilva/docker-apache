@@ -27,8 +27,8 @@ EXPOSE 80 443
 
 WORKDIR /etc/apache2
 
-COPY ./entrypoint.sh /entrypoint.sh
+COPY entrypoint.sh entrypoint.sh
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["entrypoint.sh"]
 
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
