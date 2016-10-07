@@ -1,4 +1,4 @@
-# Apache 2.4
+# Apache2
 
 FROM debian:jessie
 
